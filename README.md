@@ -34,11 +34,20 @@ We have three columns: package name, review and polarity (0 = bad, 1 = good)
 
 **Step 2:**
 
-Preprocess the data and use Naive Bayes to classify the reviews as good or bad.
+Preprocess the data by eliminating the package name column and putting all reviews in lower case. 
 
 **Step 3:**
 
-Use the app.py to create your new pipeline. 
+Separate target from feature, and split your data.
+
+**Step 4:**
+
+Vectorize your features and use Naive Bayes to classify the reviews as good or bad.
+We will not focus on hypertuning our model this time. This was an introduction project to sentiment analysis using Naive Bayes.
+
+**Step 4:**
+
+Use the app.py to create your pipeline. 
 
 Save your naive bayes classification model in the 'models' folder.
 
