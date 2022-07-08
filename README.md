@@ -31,16 +31,13 @@ This is a simple project using Naive Bayes Classifier and Scikit-learn to create
 **Step 1:**
 
 We have three columns: package name, review and polarity (0 = bad, 1 = good)
+Preprocess the data by eliminating the package name column and putting all reviews in lower case.
 
 **Step 2:**
 
-Preprocess the data by eliminating the package name column and putting all reviews in lower case. 
+ Separate target from feature, and split your data.
 
 **Step 3:**
-
-Separate target from feature, and split your data.
-
-**Step 4:**
 
 Vectorize your features and use Naive Bayes to classify the reviews as good or bad.
 We will not focus on hypertuning our model this time. This was an introduction project to sentiment analysis using Naive Bayes.
