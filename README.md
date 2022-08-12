@@ -2,7 +2,7 @@
 # Naive Bayes Project Tutorial
 <!-- endhide -->
 
-- In this project we should follow the instructions carefully because this is a brief introduction to NLP and how to deal with semtniment analysis. 
+- In this project we should follow the instructions carefully because this is a brief introduction to NLP and how to deal with sentiment analysis. 
 
 - Of course, we'll handle it with Naive Bayes. 
 
