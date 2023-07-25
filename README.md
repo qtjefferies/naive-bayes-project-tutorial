@@ -1,53 +1,74 @@
 <!-- hide -->
-# Naive Bayes Project Tutorial
+# Naive Bayes
 <!-- endhide -->
 
-- In this project, we should follow the instructions carefully because this is a brief introduction to NLP and how to deal with sentiment analysis. 
-
-- Of course, we'll handle it with Naive Bayes. 
-
-- We'll have the opportunity to go deeper with sentiment analysis and NLP in its own future lesson.
-
+- Understand a new dataset.
+- Process it by applying exploratory data analysis (EDA).
+- Model the data using Naive Bayes.
+- Analyze the results and optimize the model.
 
 ## 🌱  How to start this project
 
 You will not be forking this time, please take some time to read these instructions:
 
 1. Create a new repository based on [machine learning project](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) by [clicking here](https://github.com/4GeeksAcademy/machine-learning-python-template).
-2. Open the recently created repostiroy on Gitpod by using the [Gitpod button extension](https://www.gitpod.io/docs/browser-extension/).
-3. Once Gitpod VSCode has finished opening you start your project following the Instructions below.
+2. Open the newly created repository in Codespace using the [Codespace button extension](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
+3. Once the Codespace VSCode has finished opening, start your project by following the instructions below.
 
 ## 🚛 How to deliver this project
 
-Once you are finished creating your naive bayes model, make sure to commit your changes, push to your repository and go to 4Geeks.com to upload the repository link.
-
+Once you are finished creating your linear regression model, make sure to commit your changes, push to your repository and go to 4Geeks.com to upload the repository link.
 
 ## 📝 Instructions
 
-**Naive sentiment analysis**
+### Sentiment analysis
 
-This is a simple project using Naive Bayes Classifier and Scikit-learn to create a Google Play store reviews classifier (Sentiment Analysis) in Python. You will categorize user reviews as good or bad. The Naive Bayes classification technique is a simple and powerful classification task in machine learning. In this dataset, we use the 23 most popular mobile apps and only two columns.
+Naive Bayes models are very useful when we want to analyze sentiment, classify texts into topics or recommendations, as the characteristics of these challenges meet the theoretical and methodological assumptions of the model very well.
 
-**Step 1:**
+In this project you will practice with a dataset to create a review classifier for the Google Play store.
 
-We have three columns: package name, review, and polarity (0 = bad, 1 = good)
-Preprocess the data by eliminating the package name column and putting all reviews in lowercase.
+#### Step 1: Loading the dataset
 
-**Step 2:**
+The dataset can be found in this project folder under the name `playstore_reviews.csv`. You can load it into the code directly from the link (`https://raw.githubusercontent.com/4GeeksAcademy/naive-bayes-project-tutorial/main/playstore_reviews.csv`) or download it and add it by hand in your repository. In this dataset you will find the following variables:
 
- Separate the target from the feature, and split your data.
+- package_name. Name of the mobile application (categorical)
+- review. Comment about the mobile application (categorical)
+- polarity. Class variable (0 or 1), being 0 a negative comment and 1, positive (numeric).
 
-**Step 3:**
+#### Step 2: Study of variables and their content
 
-Vectorize your features and use Naive Bayes to classify the reviews as good or bad.
-We will not focus on hypertuning our model this time. This was an introduction project to sentiment analysis using Naive Bayes.
+In this case, we have only 3 variables: 2 predictors and a dichotomous label. Of the two predictors, we are really only interested in the comment part, since the fact of classifying a comment as positive or negative will depend on its content, not on the application from which it was written. Therefore, the `package_name` variable should be removed.
 
-**Step 4:**
+When we work with text as in this case, it does not make sense to do an EDA, the process is different, since the only variable we are interested in is the one that contains the text. In other cases where the text is part of a complex set with other numeric predictor variables and the prediction objective is different, then it makes sense to apply an EDA.
 
-Use app.py to create your pipeline. 
+However, we cannot work with plain text, it must first be processed. This process consists of several steps:
 
-Save your naive bayes classification model in the 'models' folder.
+1. Removing spaces and converting the text to lowercase:
+```py
+df['column'] = df['column'].str.strip().str.lower()
+```
+2. Divide the dataset into train and test: `X_train`, `X_test`, `y_train`, `y_test`.
+Transform the text into a word count matrix. This is a way to obtain numerical features from the text. For this, we use the training set to train the transformer and apply it in test:
+```py
+vec_model = CountVectorizer(stop_words = 'english')
+X_train = vec_model.fit_transform(X_train).toarray()
+X_test = vec_model.transform(X_test).toarray()
+```
 
-In your README file write a brief summary.
+Once we have finished we will have the predictors ready to train the model.
 
-Solution guide: https://github.com/4GeeksAcademy/naive-bayes-project-tutorial/blob/main/solution_guide.ipynb
+#### Step 3: Build a naive bayes model
+
+Start solving the problem by implementing a model of which you will have to choose which of the three implementations to use: `GaussianNB`, `MultinomialNB` or `BernoulliNB`, according to what we have studied in the module. Try now to train it with the two other implementations and confirm if the model you have chosen is the right one.
+
+#### Step 4: Optimize the previous model
+
+After training the model in its three implementations, choose the best option and try to optimize its results with a random forest, if possible.
+
+#### Step 5: Save the model
+
+Store the model in the appropriate folder.
+
+#### Step 6: Explore other alternatives
+
+What other models of the ones we have studied could you use to try to overcome the results of a Naive Bayes? Argue this and train the model.
