@@ -72,3 +72,5 @@ Store the model in the appropriate folder.
 #### Step 6: Explore other alternatives
 
 Which other models of the ones we have studied could you use to try to overcome the results of a Naive Bayes? Argue this and train the model.
+
+> NOTE: Solution: https://github.com/4GeeksAcademy/naive-bayes-project-tutorial/blob/main/solution.ipynb

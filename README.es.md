@@ -73,4 +73,4 @@ Almacena el modelo en la carpeta correspondiente.
 
 ¿Qué otros modelos de los que hemos estudiado podrías utilizar para intentar superar los resultados de un Naive Bayes? Arguméntalo y entrena el modelo.
 
-> NOTA: Solución: 
+> NOTA: Solución: https://github.com/4GeeksAcademy/naive-bayes-project-tutorial/blob/main/solution.ipynb
