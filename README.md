@@ -45,12 +45,12 @@ However, we cannot work with plain text, it must first be processed. This proces
 
 1. Removing spaces and converting the text to lowercase:
 ```py
-df['column'] = df['column'].str.strip().str.lower()
+df["column"] = df["column"].str.strip().str.lower()
 ```
 2. Divide the dataset into train and test: `X_train`, `X_test`, `y_train`, `y_test`.
-Transform the text into a word count matrix. This is a way to obtain numerical features from the text. For this, we use the training set to train the transformer and apply it in test:
+3. Transform the text into a word count matrix. This is a way to obtain numerical features from the text. For this, we use the training set to train the transformer and apply it in test:
 ```py
-vec_model = CountVectorizer(stop_words = 'english')
+vec_model = CountVectorizer(stop_words = "english")
 X_train = vec_model.fit_transform(X_train).toarray()
 X_test = vec_model.transform(X_test).toarray()
 ```
@@ -71,4 +71,4 @@ Store the model in the appropriate folder.
 
 #### Step 6: Explore other alternatives
 
-What other models of the ones we have studied could you use to try to overcome the results of a Naive Bayes? Argue this and train the model.
+Which other models of the ones we have studied could you use to try to overcome the results of a Naive Bayes? Argue this and train the model.

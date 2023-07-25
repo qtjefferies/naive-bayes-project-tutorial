@@ -45,12 +45,12 @@ Sin embargo, no podemos trabajar con texto plano, antes hay que procesarlo. Este
 
 1. Eliminar espacios y convertir a minúsculas el texto:
 ```py
-df['column'] = df['column'].str.strip().str.lower()
+df["column"] = df["column"].str.strip().str.lower()
 ```
 2. Dividir el conjunto de datos en train y test: `X_train`, `X_test`, `y_train`, `y_test`
 3. Transformar el texto en una matriz de recuento de palabras. Esta es una forma de obtener características numéricas a partir del texto. Para ello, utilizamos el conjunto de train para entrenar el transformador y la aplicamos en test:
 ```py
-vec_model = CountVectorizer(stop_words = 'english')
+vec_model = CountVectorizer(stop_words = "english")
 X_train = vec_model.fit_transform(X_train).toarray()
 X_test = vec_model.transform(X_test).toarray()
 ```
@@ -72,3 +72,5 @@ Almacena el modelo en la carpeta correspondiente.
 #### Paso 6: Explora otras alternativas
 
 ¿Qué otros modelos de los que hemos estudiado podrías utilizar para intentar superar los resultados de un Naive Bayes? Arguméntalo y entrena el modelo.
+
+> NOTA: Solución: 
