@@ -1,5 +1,5 @@
 <!-- hide -->
-# Naive Bayes
+# Naive Bayes - Guía paso a paso
 <!-- endhide -->
 
 - Comprender un dataset nuevo.
@@ -9,15 +9,15 @@
 
 ## 🌱  Cómo iniciar este proyecto
 
-Esta vez no se hará Fork, tómate un tiempo para leer estas instrucciones:
+Sigue las siguientes instrucciones:
 
-1. Crear un nuevo repositorio basado en el [proyecto de Machine Learing](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) [haciendo clic aquí](https://github.com/4GeeksAcademy/machine-learning-python-template).
+1. Crea un nuevo repositorio basado en el [proyecto de Machine Learing](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) [haciendo clic aquí](https://github.com/4GeeksAcademy/machine-learning-python-template).
 2. Abre el repositorio creado recientemente en Codespace usando la [extensión del botón de Codespace](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
 3. Una vez que el VSCode del Codespace haya terminado de abrirse, comienza tu proyecto siguiendo las instrucciones a continuación.
 
 ## 🚛 Cómo entregar este proyecto
 
-Una vez que hayas terminado de resolver los ejercicios, asegúrate de confirmar tus cambios, hazle "push" al fork de tu repositorio y ve a 4Geeks.com para subir el enlace del repositorio.
+Una vez que hayas terminado de resolver el caso práctico, asegúrate de confirmar tus cambios, haz push a tu repositorio y ve a 4Geeks.com para subir el enlace del repositorio.
 
 ## 📝 Instrucciones
 
@@ -31,9 +31,9 @@ En este proyecto practicarás con un conjunto de datos para crear un clasificado
 
 El conjunto de datos se puede encontrar en esta carpeta de proyecto bajo el nombre `playstore_reviews.csv`. Puedes cargarlo en el código directamente desde el enlace (`https://raw.githubusercontent.com/4GeeksAcademy/naive-bayes-project-tutorial/main/playstore_reviews.csv`) o descargarlo y añadirlo a mano en tu repositorio. En este conjunto de datos encontrarás las siguientes variables:
 
-- package_name. Nombre de la aplicación móvil (categórico)
-- review. Comentario sobre la aplicación móvil (categórico)
-- polarity. Variable de clase (0 o 1), siendo 0 un comentario negativo y 1, positivo (numérico)
+- `package_name`. Nombre de la aplicación móvil (categórico)
+- `review`. Comentario sobre la aplicación móvil (categórico)
+- `polarity`. Variable de clase (0 o 1), siendo 0 un comentario negativo y 1, positivo (numérico)
 
 #### Paso 2: Estudio de variables y su contenido
 

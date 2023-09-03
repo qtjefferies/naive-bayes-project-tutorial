@@ -1,5 +1,5 @@
 <!-- hide -->
-# Naive Bayes
+# Naive Bayes - Step by step guide
 <!-- endhide -->
 
 - Understand a new dataset.
@@ -9,7 +9,7 @@
 
 ## 🌱  How to start this project
 
-You will not be forking this time, please take some time to read these instructions:
+Follow the instructions below:
 
 1. Create a new repository based on [machine learning project](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) by [clicking here](https://github.com/4GeeksAcademy/machine-learning-python-template).
 2. Open the newly created repository in Codespace using the [Codespace button extension](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
@@ -17,7 +17,7 @@ You will not be forking this time, please take some time to read these instructi
 
 ## 🚛 How to deliver this project
 
-Once you are finished creating your linear regression model, make sure to commit your changes, push to your repository and go to 4Geeks.com to upload the repository link.
+Once you have finished solving the exercises, be sure to commit your changes, push to your repository and go to 4Geeks.com to upload the repository link.
 
 ## 📝 Instructions
 
@@ -31,9 +31,9 @@ In this project you will practice with a dataset to create a review classifier f
 
 The dataset can be found in this project folder under the name `playstore_reviews.csv`. You can load it into the code directly from the link (`https://raw.githubusercontent.com/4GeeksAcademy/naive-bayes-project-tutorial/main/playstore_reviews.csv`) or download it and add it by hand in your repository. In this dataset you will find the following variables:
 
-- package_name. Name of the mobile application (categorical)
-- review. Comment about the mobile application (categorical)
-- polarity. Class variable (0 or 1), being 0 a negative comment and 1, positive (numeric).
+- `package_name`. Name of the mobile application (categorical)
+- `review`. Comment about the mobile application (categorical)
+- `polarity`. Class variable (0 or 1), being 0 a negative comment and 1, positive (numeric).
 
 #### Step 2: Study of variables and their content
 
