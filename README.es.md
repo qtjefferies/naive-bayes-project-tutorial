@@ -7,12 +7,12 @@
 - Modelar los datos utilizando un Naive Bayes.
 - Analizar los resultados y optimizar el modelo.
 
-## 🌱  Cómo iniciar este proyecto
+## 🌱 Cómo iniciar este proyecto
 
 Sigue las siguientes instrucciones:
 
-1. Crea un nuevo repositorio basado en el [proyecto de Machine Learing](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) [haciendo clic aquí](https://github.com/4GeeksAcademy/machine-learning-python-template).
-2. Abre el repositorio creado recientemente en Codespace usando la [extensión del botón de Codespace](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
+1. Crea un nuevo repositorio basado en el [proyecto de Machine Learning](https://github.com/4GeeksAcademy/machine-learning-python-template) [haciendo clic aquí](https://github.com/4GeeksAcademy/machine-learning-python-template/generate).
+2. Abre el repositorio creado recientemente en Codespace usando la [extensión del botón de Codespace](https://docs.github.com/es/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
 3. Una vez que el VSCode del Codespace haya terminado de abrirse, comienza tu proyecto siguiendo las instrucciones a continuación.
 
 ## 🚛 Cómo entregar este proyecto
@@ -29,7 +29,12 @@ En este proyecto practicarás con un conjunto de datos para crear un clasificado
 
 #### Paso 1: Carga del conjunto de datos
 
-El conjunto de datos se puede encontrar en esta carpeta de proyecto bajo el nombre `playstore_reviews.csv`. Puedes cargarlo en el código directamente desde el enlace (`https://raw.githubusercontent.com/4GeeksAcademy/naive-bayes-project-tutorial/main/playstore_reviews.csv`) o descargarlo y añadirlo a mano en tu repositorio. En este conjunto de datos encontrarás las siguientes variables:
+El conjunto de datos se puede encontrar en esta carpeta de proyecto bajo el nombre `playstore_reviews.csv`. Puedes cargarlo en el código directamente desde el sigiente enlace: 
+
+```text
+https://raw.githubusercontent.com/4GeeksAcademy/naive-bayes-project-tutorial/main/playstore_reviews.csv
+```
+O descargarlo y añadirlo a mano en tu repositorio. En este conjunto de datos encontrarás las siguientes variables:
 
 - `package_name`. Nombre de la aplicación móvil (categórico)
 - `review`. Comentario sobre la aplicación móvil (categórico)
@@ -73,4 +78,4 @@ Almacena el modelo en la carpeta correspondiente.
 
 ¿Qué otros modelos de los que hemos estudiado podrías utilizar para intentar superar los resultados de un Naive Bayes? Arguméntalo y entrena el modelo.
 
-> NOTA: Solución: https://github.com/4GeeksAcademy/naive-bayes-project-tutorial/blob/main/solution.ipynb
+> Nota: También incorporamos muestras de solución en `./solution.ipynb` que te sugerimos honestamente que solo uses si estás atascado por más de 30 minutos o si ya has terminado y quieres compararlo con tu enfoque.
